@@ -1,15 +1,4 @@
-#!/usr/bin/env bash
+Script Bash para enviar mensajes con SMTP authuser
 
-#Conexion Servidor
-SERVER=servidor.mail:puerto
-USER=authuser
-PASS=passuser
-
-#Datos Email
-FROM=from@email.tld
-TO=to@email.tld
-ASUNTO="Asunto mensaje"
-MENSAJE="Cuerpo mensaje"
-
-#Envio
-sendEmail -s ${SERVER} -xu ${USER} -xp ${PASS} -f "${FROM}" -t ${TO} -u "${ASUNTO}" -m "${MENSAJE}"
+Requiere de sendEmail
+http://caspian.dotconf.net/menu/Software/SendEmail/
